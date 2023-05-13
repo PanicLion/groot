@@ -1,0 +1,24 @@
+{
+  "name": "groot",
+  "version": "1.0.0",
+  "description": "A real time chat application",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon src/server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mahendra Patel",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "http": "^0.0.1-security",
+    "moment": "^2.29.4",
+    "socket.io": "^4.6.1",
+    "stream": "^0.0.2",
+    "through2": "^4.0.2",
+    "ws": "^8.13.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}

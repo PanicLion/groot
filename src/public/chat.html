@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/chat.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <!-- <h1>Hello, world!</h1> -->
+    <div class="container">
+
+        <!-- Page header start -->
+        <div class="page-title">
+            <div class="row gutters">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                    <h5 class="title">Groot</h5>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12"> </div>
+            </div>
+        </div>
+        <!-- Page header end -->
+    
+        <!-- Content wrapper start -->
+        <div class="content-wrapper">
+    
+            <!-- Row start -->
+            <div class="row gutters">
+    
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+    
+                    <div class="card m-0">
+    
+                        <!-- Row start -->
+                        <div class="row no-gutters">
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-3 col-3">
+                                <div class="users-container">
+                                    <div class="chat-search-box">
+                                        <div class="input-group">
+                                            <input class="form-control" placeholder="Search">
+                                            <div class="input-group-btn">
+                                                <button type="button" class="btn btn-info">
+                                                    <i class="fa fa-search"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <ul id="active-users" class="users"></ul>
+                                </div>
+                            </div>
+                            <div class="col-xl-8 col-lg-8 col-md-8 col-sm-9 col-9">
+                                <div class="selected-user row">
+                                    <h2 class="col" id="room-name"></h2>
+                                    <a href="index.html" class="btn" id="leave-btn">Leave Room</a>
+                                </div>
+                                <div class="chat-container">
+                                    <ul class="chat-box chatContainerScroll"></ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Row end -->
+                    </div>
+                </div>
+            </div>
+            <!-- Row end -->
+            <div class="form-group col-md-12">
+                <form id="chat-form">
+                    <div class="form-row align-items-center">
+                        <div class="col">
+                            <input type="text" id="msg" class="form-control" rows="3" placeholder="Type your message here..."/>
+                        </div>
+                        <div class="col-auto">
+                            <button class="btn-plane"><i class="fas fa-paper-plane"></i> </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- Content wrapper end -->
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.2/qs.min.js"
+        integrity="sha256-TDxXjkAUay70ae/QJBEpGKkpVslXaHHayklIVglFRT4="
+        crossorigin="anonymous"
+    ></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/client.js"></script>
+  </body>
+</html>
